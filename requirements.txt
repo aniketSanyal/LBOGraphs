@@ -1,0 +1,20 @@
+# Python dependencies for the neural-operator benchmark.
+#
+# NOTE: install PyTorch separately with the right CUDA build first, e.g.
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# then:
+#   pip install -r requirements.txt
+
+numpy
+scipy
+trimesh
+robust_laplacian
+matplotlib
+
+# notebook execution (jupyter nbconvert --execute)
+nbconvert
+nbclient
+ipykernel
+
+# optional: nicer results table in the notebook
+pandas

@@ -1,0 +1,158 @@
+{
+  "Sphere/Diffusion": {
+    "Ours": {
+      "final_error": 0.022805742919445038,
+      "best_error": 0.022450564429163933,
+      "n_parameters": 4860,
+      "seconds": 3221.872590780258
+    },
+    "CNO": {
+      "final_error": 0.3671638071537018,
+      "best_error": 0.3418165445327759,
+      "n_parameters": 107657,
+      "seconds": 86.68878412246704
+    },
+    "FNO": {
+      "final_error": 0.0756639689207077,
+      "best_error": 0.07558221369981766,
+      "n_parameters": 287617,
+      "seconds": 36.88167214393616
+    },
+    "LNO": {
+      "final_error": 0.3693941533565521,
+      "best_error": 0.36931541562080383,
+      "n_parameters": 1325,
+      "seconds": 27.044252395629883
+    }
+  },
+  "Sphere/Reaction-Diffusion": {
+    "Ours": {
+      "final_error": 0.0214006956666708,
+      "best_error": 0.021082580089569092,
+      "n_parameters": 4860,
+      "seconds": 3179.870601415634
+    },
+    "CNO": {
+      "final_error": 0.37188565731048584,
+      "best_error": 0.3517420291900635,
+      "n_parameters": 107657,
+      "seconds": 79.76575183868408
+    },
+    "FNO": {
+      "final_error": 0.10309290885925293,
+      "best_error": 0.10298748314380646,
+      "n_parameters": 287617,
+      "seconds": 35.86169362068176
+    },
+    "LNO": {
+      "final_error": 0.38073650002479553,
+      "best_error": 0.3802206218242645,
+      "n_parameters": 1325,
+      "seconds": 23.31159806251526
+    }
+  },
+  "Sphere/Beam": {
+    "Ours": {
+      "final_error": 0.03002452850341797,
+      "best_error": 0.02975655160844326,
+      "n_parameters": 4860,
+      "seconds": 3185.0941290855408
+    },
+    "CNO": {
+      "final_error": 0.9732593894004822,
+      "best_error": 0.9138445854187012,
+      "n_parameters": 107657,
+      "seconds": 80.007493019104
+    },
+    "FNO": {
+      "final_error": 0.16665154695510864,
+      "best_error": 0.16608838737010956,
+      "n_parameters": 287617,
+      "seconds": 35.50252723693848
+    },
+    "LNO": {
+      "final_error": 0.9682826995849609,
+      "best_error": 0.9674986004829407,
+      "n_parameters": 1325,
+      "seconds": 23.563408136367798
+    }
+  },
+  "Torus/Diffusion": {
+    "Ours": {
+      "final_error": 0.024510778486728668,
+      "best_error": 0.024510778486728668,
+      "n_parameters": 4860,
+      "seconds": 3156.499118566513
+    },
+    "CNO": {
+      "final_error": 0.1573885828256607,
+      "best_error": 0.14977674186229706,
+      "n_parameters": 107657,
+      "seconds": 79.25967812538147
+    },
+    "FNO": {
+      "final_error": 0.15403428673744202,
+      "best_error": 0.1369692087173462,
+      "n_parameters": 287617,
+      "seconds": 33.30879878997803
+    },
+    "LNO": {
+      "final_error": 0.47187748551368713,
+      "best_error": 0.4655908942222595,
+      "n_parameters": 1325,
+      "seconds": 23.524645805358887
+    }
+  },
+  "Torus/Reaction-Diffusion": {
+    "Ours": {
+      "final_error": 0.02573082596063614,
+      "best_error": 0.025590958073735237,
+      "n_parameters": 4860,
+      "seconds": 3147.773400068283
+    },
+    "CNO": {
+      "final_error": 0.1678585410118103,
+      "best_error": 0.16473396122455597,
+      "n_parameters": 107657,
+      "seconds": 79.92575097084045
+    },
+    "FNO": {
+      "final_error": 0.13065402209758759,
+      "best_error": 0.1234159916639328,
+      "n_parameters": 287617,
+      "seconds": 32.786311626434326
+    },
+    "LNO": {
+      "final_error": 0.4396277964115143,
+      "best_error": 0.43439412117004395,
+      "n_parameters": 1325,
+      "seconds": 23.465621948242188
+    }
+  },
+  "Torus/Beam": {
+    "Ours": {
+      "final_error": 0.04035884886980057,
+      "best_error": 0.03976249322295189,
+      "n_parameters": 4860,
+      "seconds": 3155.890625
+    },
+    "CNO": {
+      "final_error": 0.2724634110927582,
+      "best_error": 0.2585122585296631,
+      "n_parameters": 107657,
+      "seconds": 80.26640343666077
+    },
+    "FNO": {
+      "final_error": 0.20427826046943665,
+      "best_error": 0.2042383849620819,
+      "n_parameters": 287617,
+      "seconds": 32.24752235412598
+    },
+    "LNO": {
+      "final_error": 0.8678515553474426,
+      "best_error": 0.8658254742622375,
+      "n_parameters": 1325,
+      "seconds": 23.44332003593445
+    }
+  }
+}

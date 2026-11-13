@@ -1,0 +1,240 @@
+{
+  "ic_type": "noise",
+  "models": [
+    "Ours",
+    "CNO",
+    "FNO",
+    "LNO",
+    "SFNO",
+    "FNO2d"
+  ],
+  "data_stats": {
+    "Sphere/Diffusion": {
+      "change": 0.8022270202636719,
+      "u0_outside_basis": 0.23120228753260874,
+      "uT_outside_basis": 0.00012196353947178122,
+      "sfno_floor": 0.00033256193273700774
+    },
+    "Sphere/Reaction-Diffusion": {
+      "change": 0.8018360733985901,
+      "u0_outside_basis": 0.23120228753260874,
+      "uT_outside_basis": 0.00020280868911959525,
+      "sfno_floor": 0.0003324412973597646
+    },
+    "Sphere/Beam": {
+      "change": 1.2226076126098633,
+      "u0_outside_basis": 0.23120228753260874,
+      "uT_outside_basis": 0.30701386461869234,
+      "sfno_floor": 0.02600584179162979
+    },
+    "Torus/Diffusion": {
+      "change": 0.804064154624939,
+      "u0_outside_basis": 0.21374890486189418,
+      "uT_outside_basis": 5.826559511235705e-05
+    },
+    "Torus/Reaction-Diffusion": {
+      "change": 0.8038126826286316,
+      "u0_outside_basis": 0.21374890486189418,
+      "uT_outside_basis": 0.00012696807556079355
+    },
+    "Torus/Beam": {
+      "change": 1.3680287599563599,
+      "u0_outside_basis": 0.21374890486189418,
+      "uT_outside_basis": 0.21869083822823268
+    }
+  },
+  "results": {
+    "Sphere/Diffusion": {
+      "Ours": {
+        "final_error": 0.0235007181763649,
+        "best_error": 0.02339026890695095,
+        "n_parameters": 4860,
+        "seconds": 3036.2222278118134
+      },
+      "CNO": {
+        "final_error": 0.6604943871498108,
+        "best_error": 0.592465877532959,
+        "n_parameters": 107657,
+        "seconds": 83.39227795600891
+      },
+      "FNO": {
+        "final_error": 0.7553021311759949,
+        "best_error": 0.4779109060764313,
+        "n_parameters": 287617,
+        "seconds": 36.01405096054077
+      },
+      "LNO": {
+        "final_error": 0.713181734085083,
+        "best_error": 0.7131488919258118,
+        "n_parameters": 1325,
+        "seconds": 25.919233560562134
+      },
+      "SFNO": {
+        "final_error": 0.006657588295638561,
+        "best_error": 0.006646654102951288,
+        "n_parameters": 304129,
+        "seconds": 77.8681526184082
+      }
+    },
+    "Sphere/Reaction-Diffusion": {
+      "Ours": {
+        "final_error": 0.027190623804926872,
+        "best_error": 0.027154747396707535,
+        "n_parameters": 4860,
+        "seconds": 3021.731369495392
+      },
+      "CNO": {
+        "final_error": 0.6814752221107483,
+        "best_error": 0.5963018536567688,
+        "n_parameters": 107657,
+        "seconds": 86.34400367736816
+      },
+      "FNO": {
+        "final_error": 0.7787913680076599,
+        "best_error": 0.4905768930912018,
+        "n_parameters": 287617,
+        "seconds": 35.3842134475708
+      },
+      "LNO": {
+        "final_error": 0.7172128558158875,
+        "best_error": 0.7170336842536926,
+        "n_parameters": 1325,
+        "seconds": 24.72059917449951
+      },
+      "SFNO": {
+        "final_error": 0.007104688789695501,
+        "best_error": 0.007033067289739847,
+        "n_parameters": 304129,
+        "seconds": 78.97381496429443
+      }
+    },
+    "Sphere/Beam": {
+      "Ours": {
+        "final_error": 0.5556525588035583,
+        "best_error": 0.5556525588035583,
+        "n_parameters": 4860,
+        "seconds": 3009.6430809497833
+      },
+      "CNO": {
+        "final_error": 1.3237899541854858,
+        "best_error": 0.9975336194038391,
+        "n_parameters": 107657,
+        "seconds": 88.69406580924988
+      },
+      "FNO": {
+        "final_error": 2.057527542114258,
+        "best_error": 0.8910467624664307,
+        "n_parameters": 287617,
+        "seconds": 36.47793960571289
+      },
+      "LNO": {
+        "final_error": 0.9829205870628357,
+        "best_error": 0.9815753102302551,
+        "n_parameters": 1325,
+        "seconds": 25.57119083404541
+      },
+      "SFNO": {
+        "final_error": 0.06723549962043762,
+        "best_error": 0.06324133276939392,
+        "n_parameters": 304129,
+        "seconds": 79.01271390914917
+      }
+    },
+    "Torus/Diffusion": {
+      "Ours": {
+        "final_error": 0.026594027876853943,
+        "best_error": 0.026228411123156548,
+        "n_parameters": 4860,
+        "seconds": 3120.534577846527
+      },
+      "CNO": {
+        "final_error": 0.30172210931777954,
+        "best_error": 0.2964746356010437,
+        "n_parameters": 107657,
+        "seconds": 85.53957080841064
+      },
+      "FNO": {
+        "final_error": 0.6103342771530151,
+        "best_error": 0.3302009403705597,
+        "n_parameters": 287617,
+        "seconds": 33.69244074821472
+      },
+      "LNO": {
+        "final_error": 0.7204586863517761,
+        "best_error": 0.7196096777915955,
+        "n_parameters": 1325,
+        "seconds": 25.05542778968811
+      },
+      "FNO2d": {
+        "final_error": 0.018853062763810158,
+        "best_error": 0.01879047229886055,
+        "n_parameters": 893537,
+        "seconds": 43.57316279411316
+      }
+    },
+    "Torus/Reaction-Diffusion": {
+      "Ours": {
+        "final_error": 0.026476405560970306,
+        "best_error": 0.026230257004499435,
+        "n_parameters": 4860,
+        "seconds": 3136.758233308792
+      },
+      "CNO": {
+        "final_error": 0.30338001251220703,
+        "best_error": 0.2976004183292389,
+        "n_parameters": 107657,
+        "seconds": 85.36710405349731
+      },
+      "FNO": {
+        "final_error": 0.600506603717804,
+        "best_error": 0.3337819576263428,
+        "n_parameters": 287617,
+        "seconds": 32.936466693878174
+      },
+      "LNO": {
+        "final_error": 0.7424676418304443,
+        "best_error": 0.7420231103897095,
+        "n_parameters": 1325,
+        "seconds": 24.724262952804565
+      },
+      "FNO2d": {
+        "final_error": 0.034655384719371796,
+        "best_error": 0.034625690430402756,
+        "n_parameters": 893537,
+        "seconds": 42.84781575202942
+      }
+    },
+    "Torus/Beam": {
+      "Ours": {
+        "final_error": 0.5890009999275208,
+        "best_error": 0.5890009999275208,
+        "n_parameters": 4860,
+        "seconds": 3150.8769710063934
+      },
+      "CNO": {
+        "final_error": 1.0201414823532104,
+        "best_error": 0.8503695726394653,
+        "n_parameters": 107657,
+        "seconds": 86.55852675437927
+      },
+      "FNO": {
+        "final_error": 1.4946974515914917,
+        "best_error": 0.7444856762886047,
+        "n_parameters": 287617,
+        "seconds": 33.6251175403595
+      },
+      "LNO": {
+        "final_error": 0.9882686734199524,
+        "best_error": 0.9805707335472107,
+        "n_parameters": 1325,
+        "seconds": 24.57138705253601
+      },
+      "FNO2d": {
+        "final_error": 0.2047300934791565,
+        "best_error": 0.1427316963672638,
+        "n_parameters": 893537,
+        "seconds": 42.697383642196655
+      }
+    }
+  }
+}
