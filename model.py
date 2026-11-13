@@ -212,3 +212,59 @@ class IntegralOperatorModel(nn.Module):
                 f = self.activation(f)
 
         return f
+
+class EncoderDecoderOperatorModel(nn.Module):
+    """
+    Our integral operator layers inside SFNO's encoder/decoder structure
+    (ref_models/sfno.py, class SFNO):
+
+        encoder : pointwise Linear  in_channels -> width        (SFNO fc0)
+        blocks  : IntegralOperator  width -> width, GELU between blocks
+                  (+ optional pointwise Linear skip, SFNO w0..w3)
+        decoder : pointwise MLP     width -> decoder_hidden -> out_channels
+                  with GELU                                      (SFNO fc1, fc2)
+
+    Every IntegralOperator in `layers` must map width -> width channels.
+    """
+
+    def __init__(
+        self,
+        layers: list[IntegralOperator],
+        in_channels: int,
+        width: int,
+        out_channels: int,
+        decoder_hidden: int = 128,
+        pointwise_skip: bool = False,
+    ) -> None:
+        super().__init__()
+        for layer in layers:
+            if layer.kernel.in_channels != width or layer.kernel.out_channels != width:
+                raise ValueError("every IntegralOperator must map width -> width channels")
+
+        self.encoder = nn.Linear(in_channels, width)
+        self.layers = nn.ModuleList(layers)
+        self.skips = (
+            nn.ModuleList([nn.Linear(width, width) for _ in layers])
+            if pointwise_skip else None
+        )
+        self.activation = nn.GELU()
+        self.decoder = nn.Sequential(
+            nn.Linear(width, decoder_hidden),
+            nn.GELU(),
+            nn.Linear(decoder_hidden, out_channels),
+        )
+
+    def forward(self, f0: torch.Tensor) -> torch.Tensor:
+        # [B, V, C_in] -> [B, V, width]
+        f = self.encoder(f0)
+
+        for layer_index, layer in enumerate(self.layers):
+            g = layer(f)
+            if self.skips is not None:
+                g = g + self.skips[layer_index](f)
+            if layer_index < len(self.layers) - 1:
+                g = self.activation(g)
+            f = g
+
+        # [B, V, width] -> [B, V, C_out]
+        return self.decoder(f)
